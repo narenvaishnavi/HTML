@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+		 .square{
+                 background-color: lightgrey;
+		 width:18vw;
+		 height:28vw;
+		 border-color:#000;
+		 margin-top: 13em;
+		 margin-left:2em;
+                 overflow: scroll;
+                 outline: 1px solid slategrey;
+               
+		 }
+		 .b {
+                position:absolute;
+                z-index:2;
+                top:0; left:0;
+                height: 8em;
+                width: 8em;
+                margin-left:4em;
+            }
+            .c {
+                position:absolute;
+                z-index:2;
+                top:10em; 
+                left:0;
+                height: 27.5em;
+                width: 60em;
+                margin-left:20em;
+            }
+			.footer1 {
+                position: fixed;
+                bottom: 4em;
+                width: 100%;
+                margin-bottom: 25.5em;
+                font-style: oblique;
+                margin-left:2em;
+            }
+			
+	    .veggie {
+                position: fixed;
+                width: 100%;
+                margin-bottom: 20em;
+                font-style: oblique;
+            }
+            .new_added{
+                color: black;
+                margin-left: 0.5em;
+                text-decoration: none;
+            }
+            .button3 {
+                position:absolute;
+                left:40em;
+                top:-30%;
+                z-index: 4;
+                width:80px;
+                margin-top:20em !important;
+                width:40em !important;
+                -moz-border-radius: 15px;
+                border-radius: 15px;
+                  border:solid 1px black; 
+                   padding:5px;
+                   margin-left:-10em !important;
+                   
+             }
+              .button2 {position:absolute;left:80em;z-index:3;width:130px;top:2%}
+               select{
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+            }
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 2;
+    top: -5px;
+    left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+		</style>
+    </head>
+	
+    <body>
+        <script>
+           function myFunction(value){
+              
+                var x= document.getElementById("mySelect").value;
+                if(x === "favorites"){
+                    window.location.href = "favorites.html";
+                }
+                    
+                    else if(x === "review"){
+                        window.location.href = "review.html";
+                    }
+                    
+                    else if(x==="home"){
+                        window.location.href = "index.html";
+                    }
+           }
+            
+        </script>
+      
+      
+         <input type="text" name="search" class="button3" placeholder="Search restaurant or cuisine">
+          <select id="mySelect" class="button2" onchange="myFunction(this.value)">
+                <option value="loggedin">Hello, Tom
+                <option value="favorites">Favorites
+                <option value="review">Review
+                <option value="home"> Log out
+            </select>
+        <h4 class="footer1">Veggies</h4>
+        
+        <div class="square">
+    
+            <h4 class="new_added">Filter</h4>
+            <label class="new_added">Sort by</label><br>
+            <input type="checkbox" class="new_added" onclick='window.location.assign("#")'/>Popularity<br>
+            <input type="checkbox" class="new_added" onclick='window.location.assign("index.html")'/>Rating<br>
+            <input type="checkbox" class="new_added" onclick='window.location.assign("index.html")'/>Cost - high to low<br>
+            <input type="checkbox" class="new_added" onclick='window.location.assign("index.html")'/>Cost - low to high<br>
+            <br> 
+            <div class="tooltip">
+            <a href="newly_opened.html"><label class="new_added"> Recently Added</label>
+               <span class="tooltiptext">Click here!</span>
+            </a>
+            </div>  
+            <br>
+            <h4 class="new_added">Cuisine</h4>
+            <input type="checkbox" class="new_added" onclick='window.location.assign("index.html")'/>Pizza<br>
+            <input type="checkbox" class="new_added" onclick='window.location.assign("index.html")'/>Sandwich<br>
+            <input type="checkbox" class="new_added" onclick='window.location.assign("index.html")'/>Cheese<br>
+            <input type="checkbox" class="new_added" onclick='window.location.assign("index.html")'/>Italian<br>
+            <input type="checkbox" class="new_added" onclick='window.location.assign("index.html")'/>Indian<br>
+            <input type="checkbox" class="new_added" onclick='window.location.assign("index.html")'/>Chinese<br>
+            <input type="checkbox" class="new_added" onclick='window.location.assign("index.html")'/>American<br>
+            <img src="C:/Users/Rahul/Desktop/cuisine.jpg" class="c"/>
+            </div>
+        
+
+        
+        
+    </body>
+</html>

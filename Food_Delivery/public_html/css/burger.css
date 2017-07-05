@@ -1,0 +1,155 @@
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.square{
+    background-color: lightgrey;
+    width:18vw;
+    height:28vw;
+    border-color:#000;
+    margin-top: 13em;
+    margin-left:2em;
+    overflow: scroll;
+    outline: 1px solid slategrey;
+
+}
+.b {
+    position:absolute;
+    z-index:2;
+    top:0; left:0;
+    height: 10em;
+    width: 12em;
+    margin-left:4em;
+}
+.footer1 {
+    position: fixed;
+    bottom: 4em;
+    width: 100%;
+    margin-bottom: 20em;
+    font-style: oblique;
+    margin-left:2em;
+}
+
+.veggie {
+    position: fixed;
+    width: 100%;
+    margin-bottom: 20em;
+    font-style: oblique;
+}
+.new_added{
+    color: black;
+    margin-left: 0.5em;
+    text-decoration: none;
+}
+.button3 {
+    position:absolute;
+    left:40em;
+    top:-30%;
+    z-index: 4;
+    width:80px;
+    margin-top:20em !important;
+    width:40em !important;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border:solid 1px black; 
+    padding:5px;
+    margin-left:-10em !important;
+
+}
+.button2 {position:absolute;left:80em;z-index:3;width:130px;top:2%}
+select{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.tooltip {
+
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #761c19;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 2;
+    top: -5px;
+    left: 105%;
+}
+
+.tooltip .tooltiptext1 {
+    visibility: hidden;
+    width: 120px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 2;
+    top: -5px;
+    left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+.c {
+    position:absolute;
+    z-index:2;
+    top:10em; 
+    left:0;
+    height: 29em;
+    margin-left:20em;
+}
+.d {
+    position:absolute;
+    z-index:3;
+    top:10em; 
+    left:0;
+    height: 29em;
+    margin-left:43em;
+    width:47%
+}
+.button_align{
+    position:absolute;
+    left:65em;
+    top:-29.5%;
+    z-index: 6;
+    margin-top:19.7em !important;
+    width:5em;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    height: 3.1em;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}

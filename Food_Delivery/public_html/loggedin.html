@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Logged In</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="css/loggedIn.css"/>
+    </head>
+    <body>
+         <script>
+           function myFunction(value){
+              
+                var x= document.getElementById("mySelect").value;
+                if(x === "favorites"){
+                    window.location.href = "favorites.html";
+                }
+                    
+                    else if(x === "review"){
+                        window.location.href = "review.html";
+                    }
+                    
+                    else if(x==="home"){
+                        window.location.href = "index.html";
+                    }
+           }
+           
+           function search(){
+                var skey = document.getElementById("search").value;
+                
+                if(skey != "")
+                 window.location = "https://www.tripadvisor.com/Restaurants-g49022-Charlotte_North_Carolina.html";
+                 
+                 else{
+                     alert("Please enter restaurant name! ");
+                 }
+            }
+            
+        </script>
+
+        <div class="imagewrap">
+            <img src="images/fast-food.jpg" class="a"/>
+            
+            <button onclick="document.getElementById('id01').style.display = 'block'" class="button_order">Order Online</button>
+            <select id="mySelect" class="button2" onchange="myFunction(this.value)">
+                <option value="loggedin">Hello, Tom
+                <option value="favorites">Favorites
+                <option value="review">Review
+                <option value="home"> Log out
+            </select>
+            <input type="text" id="search" name="search" class="button3" placeholder="search">
+            <button class="button_align" onclick="search()">GO</button>
+            <h4 class="footer1">Collections</h4>
+            <h4 class="footer2">Explore curated lists of top restaurants, cafes, pubs, and bars in and around Palo Alto, based on trends</h4>
+             <a href="newly_opened.html" class="footer">
+                <img src="images/newly_opened.jpg"
+                  alt="Newly_Opened"
+                  width="250em" height="170em" style="margin-left:6em;"/>
+                </a> 
+           <a href="veggie.html" class="footer4">
+                <img src="images/bufvLogo.png"
+                  alt="veggie"
+                  width="350em" height="170em" style="margin-left:8em;"/>
+                </a> 
+            
+             <a href="burger.html" class="footer5">
+                <img src="images/maxresdefault.jpg"
+                  alt="veggie"
+                  width="350em" height="170em" style="margin-left:12em;"/>
+                </a> 
+            
+        </div>
+
+    </body>
+</html>

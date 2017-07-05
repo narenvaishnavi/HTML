@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>UNCC Food App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="css/Index.css"/>
+    </head>
+    <body>
+
+        <div class="imagewrap">
+            <img src="images/fast-food.jpg" class="a"/>
+            
+            <button onclick="order()" class="button_order">Order Online</button>
+            <button onclick="document.getElementById('id01').style.display = 'block'" class="button2">Login</button>
+           <input type="text" id="search" name="search" class="button3" placeholder="Search restaurant">  
+           <div class="tooltip">
+            <button class="button_align" onclick="search()">GO
+                    <span class="tooltiptext">Click here!</span>
+            </button>
+           </div>
+            <h4 class="footer1">Collections</h4>
+            <h4 class="footer2">Explore curated lists of top restaurants, cafes, pubs, and bars in and around Palo Alto, based on trends</h4>
+            
+            <a href="newly_opened.html" class="footer">
+                <img src="images/newly_opened.jpg" alt="Newly_Opened" width="250em" height="170em" style="margin-left:6em;"/>
+                </a> 
+                
+           <a href="veggie.html" class="footer4">
+                <img src="images/bufvLogo.png"
+                  alt="veggie"
+                  width="350em" height="170em" style="margin-left:8em;"/>
+                </a> 
+            
+             <a href="burger.html" class="footer5">
+                <img src="images/maxresdefault.jpg"
+                  alt="veggie"
+                  width="350em" height="170em" style="margin-left:12em;"/>
+                </a> 
+            
+        </div>
+        
+     
+
+        <div id="id01" class="modal">
+
+            <div class="modal-content animate">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display = 'none'" class="close" title="Close Modal">&times;</span>
+                    <img src="C:/Users/Rahul/Desktop/goco-rocket-man.gif" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" id="uname" required>
+
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" id="psw" required>
+
+                    <button type="submit" onclick="login()">Login</button>
+                    <input type="checkbox" checked="checked"> Remember me
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display = 'none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            
+            function login(){
+                
+                var uname = document.getElementById("uname").value;
+                var password = document.getElementById("psw").value;
+                
+                if(uname == "" || password == ""){
+                    alert("Please enter username and password!");
+                }
+                else{
+                window.location = "loggedin.html";
+            }
+            }
+            
+            function search(){
+                var skey = document.getElementById("search").value;
+                
+                if(skey != "")
+                 window.location = "https://www.tripadvisor.com/Restaurants-g49022-Charlotte_North_Carolina.html";
+                 
+                 else{
+                     alert("Please enter restaurant name! ");
+                 }
+            }
+            
+          function order(){
+               window.location="order_online.html";
+            }
+        </script>
+    </body>
+</html>

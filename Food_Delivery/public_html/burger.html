@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link type="text/css" rel="stylesheet" href="css/burger.css"/>
+    </head>
+	
+    <body>
+        <script>
+           function myFunction(value){
+              
+                var x= document.getElementById("mySelect").value;
+                if(x === "favorites"){
+                    window.location.href = "favorites.html";
+                }
+                    
+    
+                    
+                    else if(x==="home"){
+                        window.location.href = "index.html";
+                    }
+           }
+           
+          
+           
+           function search(){
+                 var skey = document.getElementById("search").value;
+                
+                if(skey != "")
+                 window.location = "https://www.tripadvisor.com/Restaurants-g49022-Charlotte_North_Carolina.html";
+                 
+                 else{
+                     alert("Please enter restaurant name! ");
+                 }
+            }
+            
+            
+        </script>
+      
+       
+         <input type="text" name="search" id="search" class="button3" placeholder="Search restaurant">
+         <div class="tooltip">
+            <button class="button_align" onclick="search()">GO
+                    <span class="tooltiptext">Click here!</span>
+            </button>
+         </div>
+          <select id="mySelect" class="button2" onchange="myFunction(this.value)">
+                <option value="loggedin">Hello, Tom
+               
+                <option value="home"> Log out
+            </select>
+        <h3 class="footer1">Best Burger</h3>
+        
+        <div class="square">
+    
+            <h4 class="new_added">Filter</h4>
+            <label class="new_added">Sort by</label><br>
+            <input type="checkbox" class="new_added" onclick='window.location.assign("Popular.html")'/>Popularity<br>
+            <input type="checkbox" class="new_added" onclick='window.location.assign("#")'/>Rating<br>
+       
+            <br> 
+            <div>
+            <input type="radio" name="radio1" class="new_added" onclick='window.location.assign("#")'/>Cost - high to low<br>
+            <input type="radio" name="radio1" class="new_added" onclick='window.location.assign("#")'/>Cost - low to high<br>
+            </div><br>
+            <a href="newly_opened.html"><label class="new_added"> Recently Added</label>
+                <img src="images/index.jpg" style="width:40px;"/>
+            </a><br>
+            <h4 class="new_added">Cuisine</h4>
+            <input type="checkbox" class="new_added" onclick='window.location.assign("https://www.papajohns.com/")'/>Pizza<br>
+            <input type="checkbox" class="new_added" onclick='window.location.assign("http://www.subway.com/en-us")'/>Sandwich<br>
+            <input type="checkbox" class="new_added" onclick='window.location.assign("http://www.ciroscharlotte.com/")'/>Italian<br>
+            <input type="checkbox" class="new_added" onclick='window.location.assign("http://www.passagetoindianc.com/")'/>Indian<br>
+            <input type="checkbox" class="new_added" onclick='window.location.assign("http://houseofleng.com/menu/")'/>Chinese<br>
+            <input type="checkbox" class="new_added" onclick='window.location.assign("http://www.beerknurd.com/locations/charlotte-flying-saucer")'/>American<br>
+            <img src="images/burger1.jpg" class="c"/>
+            <img src="images/burger2.jpg" class="d"/>
+            
+            </div>
+    </body>
+</html>

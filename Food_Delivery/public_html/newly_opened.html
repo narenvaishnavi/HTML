@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/newly_opened.css">
+    </head>
+    <body>
+        
+         <script>
+           function myFunction(value){
+              
+                var x= document.getElementById("mySelect").value;
+                     if(x==="home"){
+                        window.location.href = "index.html";
+                    }
+           }
+            
+        </script>
+         <div class="imagewrap">
+            <img src="images/fast-food.jpg" class="a"/>
+           
+            <select id="mySelect" class="button2" onchange="myFunction(this.value)">
+                <option value="loggedin">Hello, Tom
+                <option value="home">Home
+            </select>
+            <input type="text" name="search" class="button3" placeholder="search"/>
+             <button class="button_align">GO</button></input>
+             <h4 class="footer1">Newly opened</h4>
+             <a href="https://www.starbucks.com/" class="footer">
+                <img src="images/Starbucks_Coffee_Logo.svg.png"
+                  alt="Newly_Opened"
+                  width="250em" height="210em" style="margin-left:8em;"/>
+                </a> 
+           <a href="https://www.wendys.com/" class="footer4">
+                <img src="images/Wendy's_logo_2012.svg.png"
+                  alt="veggie"
+                  width="250em" height="210em" style="margin-left:12em;"/>
+                </a> 
+            
+             <a href="https://www.bk.com/" class="footer5">
+                <img src="images/p0nF8Bj8.jpg"
+                  alt="veggie"
+                  width="250em" height="210em" style="margin-left:16em;"/>
+                </a> 
+           
+        </div>
+    </body>
+</html>
